@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현재시간은? ⏰</title>
+  <style>
+    body {
+      position: relative;
+      background-color: black;
+      color: white;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .watch-icon {
+      margin: 0 auto;
+      margin-top: 37px;
+      width: 100px;
+      height: 130px;
+      background: url('./watch-icon.svg') center center no-repeat;
+      background-size: cover;
+    }
+
+    .day-date {
+      font-size: 22px;
+      letter-spacing: -1px;
+      font-weight: 200;
+    }
+
+    .current-time {
+      margin-top: 24px;
+      font-size: 80px;
+      letter-spacing: 0.54px;
+      font-weight: 900;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="day-date">
+      <span class="year"></span>
+      년 <span class="month"></span>
+      월 <span class="date"></span>
+      일
+      <span class="day">
+        금
+      </span>요일
+    </div>
+    <div class="current-time">
+      <span class='hours'></span>
+      :
+      <span class="min">
+      </span>
+      :
+      <span class="sec">
+      </span>
+    </div>
+    <div class="watch-icon">
+
+    </div>
+  </div>
+  <script src="watch.js"></script>
+</body>
+
+</html>
